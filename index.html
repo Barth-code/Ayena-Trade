@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ayena Trade</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./assets/images/logo.png" type="image/png" />
   </head>
   <body>
     <header>
       <div class="logo">
-        <h4>Ayena Trade</h4>
-        <img src="" alt="logo" />
+        <a href="index.html"><h4>Ayena Trade</h4></a>
+        <a href="index.html"
+          ><img src="./assets/images/logo.png" alt="logo"
+        /></a>
       </div>
       <nav>
         <ul>
@@ -41,7 +44,7 @@
     <section class="services">
       <h2>Nos services</h2>
       <div class="service-container">
-        <div class="service1">
+        <div class="service">
           <img src="" alt="puceService1" />
           <h3>Intermédiation commerciale</h3>
           <p>
@@ -49,7 +52,7 @@
             fiables.
           </p>
         </div>
-        <div class="service2">
+        <div class="service">
           <img src="" alt="puceService2" />
           <h3>Gestion logistique</h3>
           <p>
@@ -57,41 +60,41 @@
             sécurité.
           </p>
         </div>
-        <div class="service3">
+        <div class="service">
           <img src="" alt="puceService3" />
           <h3>Conseil en importation</h3>
           <p>Nous vous guidons à chaque étape du processus d'importation.</p>
         </div>
       </div>
     </section>
+    <h2>Pourquoi nous choisir</h2>
 
     <div class="whyme">
-      <h2>Pourquoi nous choisir</h2>
-      <div class="reson1">
+      <div class="reson">
         <h3>Réseau étendu</h3>
         <p>Un vaste réseau de producteurs et de fournisseurs de qualité.</p>
       </div>
-      <div class="reson2">
+      <div class="reson">
         <h3>Expertise</h3>
         <p>
           Une connaissance approfondie du marché des matières premières
           agricoles.
         </p>
       </div>
-      <div class="reson3">
+      <div class="reson">
         <h3>Fiabilité</h3>
         <p>Des partenaires de confiance et des services éprouvés..</p>
       </div>
-      <h5>
-        Contactez-nous dès aujourd'hui pour discuter de vos besoins en matières
-        premières agricoles.
-      </h5>
+    </div>
+    <div class="contact">
+      <p>Notre tel : +228 93 36 71 57.</p>
+      <a href="mailto:ayenatrade@gmail.com">Envoyez-nous un mail</a>
     </div>
 
     <section class="about">
       <h2>A propos de nous</h2>
       <div class="about-container">
-        <div>
+        <div class="value">
           <h5>Missoin et Vision</h5>
           <p>
             Chez Ayena Trade, notre mission est de faciliter les échanges
@@ -103,8 +106,8 @@
           </p>
         </div>
 
-        <div>
-          <h5>Notre hidtiore</h5>
+        <div class="value">
+          <h5>Notre histiore</h5>
           <p>
             Ayena Trade a été fondée en [année de fondation] avec une passion
             pour l'agriculture et le commerce international. Depuis nos débuts,
@@ -117,21 +120,21 @@
         <div class="value">
           <h5>Nos valeurs</h5>
           <div class="value-container">
-            <div>
+            <div class="service">
               <h6>Qalité</h6>
               <p>
                 Nous nous engageons à fournir des produits de la plus haute
                 qualité.
               </p>
             </div>
-            <div>
+            <div class="service">
               <h6>Transparence</h6>
               <p>
                 Nous prônons une communication claire et honnête avec nos
                 clients et partenaires.
               </p>
             </div>
-            <div>
+            <div class="service">
               <h6>Innovation</h6>
               <p>
                 Nous cherchons constamment à améliorer nos services et à adopter
@@ -143,38 +146,48 @@
       </div>
     </section>
 
-    <section class="contact">
+    <section class="contactG">
       <h2>Nous contacter</h2>
       <p>
-        pour discuter de vos besoins en matières premières, n'hésitez pas à nous
+        Pour discuter de vos besoins en matières premières, n'hésitez pas à nous
         contacter :
       </p>
-      <form action="">
-        <input
-          type="text"
-          id="name"
-          placeholder="Etrez votre nom ou de votre société"
-        />
-        <label for="name">Nom</label>
-        <input
-          type="number"
-          id="tel"
-          placeholder="Votre numéro de téléphone/whatsap"
-        />
-        <label for="tel">Téléphone</label>
-        <input
-          type="email"
-          id="mail"
-          placeholder="Saisisez votre adresse mail profetionel"
-        />
-        <label for="mail">E-mail</label>
-        <textarea name="message" id="text" rows="5" cols="40">
-          Expliquez nous vos besoins en quelques lignes
-        </textarea>
-        <label for="text">Votre essage</label>
 
-        <input type="submit" placeholder="Envoyer" />
-      </form>
+      <div class="cont">
+        <div class="image-logo">
+          <img src="./assets/images/logo.png" alt="AyenaTrade" />
+        </div>
+        <form action="">
+          <div class="nom">
+            <label for="name">Nom</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Etrez votre nom ou de votre société"
+            />
+          </div>
+          <div class="mail">
+            <label for="mail">E-mail</label>
+            <input
+              type="email"
+              id="mail"
+              placeholder="Saisisez votre adresse mail profetionel"
+            />
+          </div>
+          <div class="text">
+            <label for="text">Votre message</label>
+            <textarea
+              name="message"
+              id="text"
+              rows="5"
+              cols="40"
+              placeholder="Expliquez nous vos besoins en quelques lignes"
+            ></textarea>
+          </div>
+
+          <input type="submit" placeholder="Envoyer" id="submit" />
+        </form>
+      </div>
     </section>
   </body>
 
