@@ -1,0 +1,52 @@
+:root {
+  --color1: #090727;
+  --btnColor: #FF8A00;
+  --tittleColor: rgb(255, 255, 255);
+  ---pColor: #DFDFDF;
+  --autre: turquoise;
+}
+
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 5px;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background: var(--color1);
+  color: var(---pColor);
+}
+
+a {
+  color: var(--btnColor);
+}
+
+header {
+  color: var(--autre);
+  display: grid;
+  grid-template-columns: 40% 60%;
+  justify-content: center;
+}
+
+nav ul {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+nav li:hover {
+  color: var(--btnColor);
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+
+.logo {
+  display: flex;
+}
